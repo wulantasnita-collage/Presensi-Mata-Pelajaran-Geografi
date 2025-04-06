@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presensi Mata Pelajaran Geografi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Navbar -->
+    <nav class="bg-blue-500 p-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="#" class="text-white text-2xl font-semibold">Presensi Mata Pelajaran Geografi</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="#home" class="text-white">Home</a>
+                <a href="#about" class="text-white">About</a>
+                <a href="#contact" class="text-white">Contact</a>
+            </div>
+            <button id="menu-toggle" class="text-white md:hidden">☰</button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden bg-blue-500 text-white">
+        <a href="#home" class="block px-4 py-2">Home</a>
+        <a href="#about" class="block px-4 py-2">About</a>
+        <a href="#contact" class="block px-4 py-2">Contact</a>
+    </div>
+
+    <!-- Home Section -->
+    <section id="home" class="py-20 bg-white text-center">
+        <h1 class="text-4xl font-bold text-blue-600">Profil SMA Taruna Bakti</h1>
+        <p class="text-xl mt-4">Merupakan sekolah pembauran yang menekankan pada pengembangan ilmu pengetahuan berlandaskan sikap dan etika, selain itu juga mengembangkan sekolah berwawasan lingkungan yang nyaman dan bersih sehingga membuat siswa betah berada di dalamnya.</p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-200 text-center">
+        <h2 class="text-3xl font-bold text-blue-600">Pelajaran Geografi</h2>
+        <p class="mt-4 text-lg">Geografi adalah ilmu yang mempelajari bumi, interaksi manusia dengan lingkungan, dan fenomena geosfer dengan perspektif ruang, lingkungan, dan wilayah.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white text-center">
+        <h2 class="text-3xl font-bold text-blue-600">Kontak Kami</h2>
+        <p class="mt-4 text-lg">Hubungi kami untuk pertanyaan lebih lanjut</p>
+        <a href="https://wa.me/0881023093590" class="mt-6 inline-block bg-green-500 text-white py-2 px-4 rounded-lg">Mulai Chat</a>
+    </section>
+
+    <!-- Presensi Geografi -->
+    <section id="presensi" class="py-20 bg-gray-100 text-center">
+        <h2 class="text-3xl font-bold text-blue-600">Presensi Mata Pelajaran Geografi</h2>
+        <form class="mt-6 space-y-4">
+            <div>
+                <label for="name" class="block text-lg">Nama:</label>
+                <input type="text" id="name" class="mt-2 p-2 border border-gray-300 rounded w-full" placeholder="Masukkan Nama Anda">
+            </div>
+            <div>
+                <label for="attendance" class="block text-lg">Kehadiran:</label>
+                <select id="attendance" class="mt-2 p-2 border border-gray-300 rounded w-full">
+                    <option value="hadir">Hadir</option>
+                    <option value="sakit">Sakit</option>
+                    <option value="izin">Izin</option>
+                    <option value="alfa">Alfa</option>
+                </select>
+            </div>
+            <button type="submit" class="mt-6 bg-blue-500 text-white py-2 px-4 rounded-lg">Kirim</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-500 text-white py-4 text-center">
+        <p>&copy; 2025 SMA Taruna Bakti. Semua hak cipta dilindungi. Wulan Tasnita NIM 2300999 Pendidikan Geografi</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
